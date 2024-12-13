@@ -1,11 +1,16 @@
-function SearchHeader() {
+function SearchHeader({ search }) {
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        debugger;
+        search('can');
+    };
+
     return (
         <div className="searchDiv">
-            <form>
-                <label>Ne arıyorsunuz?</label>
+            <form onSubmit={handleFormSubmit}>
+                <label>Ne Arıyorsunuz?</label>
                 <input />
             </form>
-
         </div>
     );
 }
