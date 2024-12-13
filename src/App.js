@@ -5,7 +5,7 @@ import searchImages from './api';
 function App() {
   const handleSubmit = (term) => {
     debugger; // Kodun çalışmasını kontrol etmek için bir duraklama noktası
-    console.log(term);
+    console.log(term); // API'den dönen sonuçlar
     searchImages(term); //Arama işlevini çağırır (bir API çağrısı yapar)
   };
   return (
