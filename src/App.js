@@ -9,7 +9,7 @@ function App() {
     debugger; // Kodun çalışmasını kontrol etmek için bir duraklama noktası
     console.log(term); // API'den dönen sonuçlar
     const result = await searchImages(term); //Arama işlevini çağırır (bir API çağrısı yapar)
-    setImages(result);
+    setImages(result)
   };
   return (
     <div className="App">
